@@ -1,0 +1,224 @@
+body, h1, h2, h3, h4, h5, h6{
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.size_image{
+    height: 45px;
+}
+.min_bg{
+    background-color: #f7f9ff;
+}
+
+/* ===>>> header section <<<=== */
+.john_header .navbar-brand{
+    font-size: 25px;
+    font-weight: 500;
+}
+.john_menu .nav-link{
+    padding-left: 20px !important;
+    padding-right: 15px !important;
+}
+.navbar a span{
+    transition: all ease .4s;
+}
+.navbar a span:hover{
+    color: #dddd;
+}
+/*===>>> banner section <<<=== */
+.banner{
+    background: url(./banner.jpg) no-repeat center center;
+    padding: 200px;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.banner_text h2 {
+	font-size: 44px;
+	margin-bottom: 30px;
+}
+.banner_text h5 {
+	margin-bottom: 27px;
+	font-size: 23px;
+}
+.banner_text .btn {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* ===>>> number counter section <<<=== */
+.number_counter h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.number_counter p{
+    font-size: 20px;
+}
+
+/* ===>>> about section <<<=== */
+.about{
+    background-color: #f7f9ff;
+}
+.about .about_text_left{
+    margin-top: 100px;
+}
+
+/* ===>>> feature section <<<=== */
+.feature .feature_item{
+    height: 280px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.feature .feature_item .feature_left{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.feature .feature_item .feature_left img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -70px;
+    display: block;
+}
+.feature .feature_item .feature_left img::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(98, 120, 223, .7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .4s;
+}
+.feature .feature_item:hover .feature_left img::after{
+    opacity: 1;
+    visibility: visible;
+}
+.feature .feature_right{
+    width: 60%;
+    padding: 25px;
+}
+
+/* ===>>> gallery section <<<=== */
+.gallery .gallery_item a{
+    position: relative;
+    display: block;
+}
+.gallery .gallery_item a::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(98, 120, 223, .7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .4s;
+}
+.gallery .gallery_item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}  
+/* ===>>> pricing table <<<=== */
+.pricing_item{
+    padding: 50px;
+    background-color: white;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    border-radius: 5px;
+}
+.pricing_item h2 {
+	font-size: 45px;
+}
+.pricing_item h5 {
+	font-size: 20px;
+	color: #7777;
+	margin-top: 15px;
+}
+.pricing_item ul {
+	list-style: none;
+	margin-left: -28px;
+	margin-top: 30px;
+	margin-bottom: 31px;
+}
+.pricing_item ul li {
+	font-size: 23px;
+	font-weight: 200;
+    margin-bottom: 15px;
+}
+.pricing_item ul li span {
+	width: 25px;
+	display: inline-block;
+    color: rgba(36, 85, 175, 0.932);
+}
+.pricing_item .pricing_btn a {
+	font-size: 25px;
+	font-weight: 600;
+	padding: 8px 12px;
+    color: rgba(36, 85, 175, 0.932);
+    border: 1px solid rgba(36, 85, 175, 0.932);
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.pricing_item:hover .pricing_btn a{
+    background-color: rgba(36, 85, 175, 0.932);
+    color: white;
+}
+.pricing_item .pricing_btn:hover a{
+    background-color: black;
+    color: white;
+}
+
+/* ===>>> testimonial section <<<=== */
+.testimonial span{
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.1);
+}
+.testimonial .testimonial_item{
+    width: 183px;
+    margin-top: 50px;
+}
+.testimonial .testimonial_item img{
+    width: 70px;
+}
+.testimonial .testimonial_item .testimonial_details{
+    text-align: left;
+}
+.testimonial .testimonial_item .testimonial_details h5{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+/* ===>>> team section start <<<=== */
+.team .team_item{}
+.team .team_item .card{
+    margin-top: 50px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.team .team_item .card img {
+	width: 120px;
+	margin-top: -62px;
+	margin-left: 15px;
+}
+.team .team_item .card h4 {
+	margin-top: 13px;
+	margin-bottom: 14px;
+}
+.team .team_item .card h5 {
+	margin-bottom: 20px;
+}
